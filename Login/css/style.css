@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding:0;
+    top: 0;
+    left:0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background-image: linear-gradient(rgba(174, 0, 255, 0.3),rgb(43, 4, 53)), url(../img/86373.jpg);
+    background-color: #000;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@font-face {
+    font-family: VeganStylePersonalUse;
+    src: url('../fonts/LucythecatRegular-R7mA.otf');
+}
+
+
+#principal{
+   display: flex;
+   flex-direction: row;
+}
+
+
+#iphone2{
+    margin-top: 20px;
+    margin-left: -220px;
+}
+
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+    margin-left: 30px;
+    
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+    background-color: white;
+    border-radius: 15px; 
+  
+    
+   
+}
+
+#form div{
+    margin-top:50px;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#form div h2{
+    font-family: VeganStylePersonalUse ;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 3em;
+}
+
+
+#form input{
+    margin:15px 20px;
+    padding:20px;
+    
+   
+}
+
+
+#form .textbox{
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+}
+
+#entrar{
+    background-color:rgb(174, 0, 255);
+    color: #fff;
+    font-size: 1.4em;
+}
+
+
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: white;
+    height: 100px;
+    font-size: 1.4em;  
+    border-radius: 15px; 
+}
+
+#login a{
+    text-decoration: none;
+}
+
+#obterAplicativo p{
+    text-align: center;
+    color: #fff;
+    font-size: 1.4em;
+  
+}
+
+#obterAplicativo{
+    width: 450px;
+    margin-top: 20px;
+
+}
+
+#obterAplicativo div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+#obterAplicativo div img:nth-child(2){
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #iphone1,#iphone2{
+        display: none;
+    }
+
+    body{
+        background: #fff;
+       
+    }
+
+    #formulario{
+
+        width: 100%;
+        margin-left: 0px;
+        
+    }
+    
+    #form{
+
+        width: 100%;
+        background-color: white;
+        border-radius: 0px;
+       
+    }
+    
+    #form div{
+        margin-top:50px;
+        padding:0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    
+    #form div h2{
+        font-family: VeganStylePersonalUse ;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-size: 3em;
+        margin-top: 50px;
+    }
+    
+    
+    #form div span{
+        color:#999;
+        font-size: 1.5em;
+        margin:0px 20px;
+    }
+    
+    #form input{
+        margin:5px 20px;
+        padding:20px;
+       
+    }
+
+    #form .info{
+        margin-top:10px;
+     
+        
+    }
+
+    #login{
+
+        margin-top: 10px;
+        border-radius: 0px;
+    }
+
+
+    
+  
+    #form .info p{
+       
+        margin:10px 10px;
+
+    }
+    
+    #login a{
+        text-decoration: none;
+    }
+       
+    #obterAplicativo{
+       display: none;
+    
+    }
+
+    
+
+}

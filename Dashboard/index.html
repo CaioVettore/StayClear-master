@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/ad2d5d6a8a.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="logo">
+            <a href="#"><img src="img/1x/Logo.png" alt=""></a>
+            <h3>Stay Clear</h3>
+        </div>
+
+        <button class="bk"><i class="fa fa-bars fa-lg"></i></button>
+
+
+        <nav>
+
+
+
+            <ul id="menu">
+                <a class="btn-close"><i class="fa fa-times"></i></a>
+                <li><a href="#" class="itemMenu" target="trocariframe"><i class="fas fa-user-alt"></i>Home</a></li>
+                <li><a href="../Profissionais/index.html" class="itemMenu" target="trocariframe"><i
+                            class="fas fa-user-tie"></i>Profissionais</a></li>
+                <li><a href="../Friends/index.html" class="itemMenu" target="trocariframe"><i
+                            class="fas fa-users"></i>Amigo</a></li>
+                <li><a href=""><i class="fas fa-comments" target="trocariframe"></i>Chat Mundial</a></li>
+                <li><a href="../Login/index.html" onclick="clearLocalStorage()"><i
+                            class="fas fa-sign-out-alt"></i>Logout</a></li>
+            </ul>
+
+            <div class="fotoPerfil">
+                <img src="" alt="" onclick="previewImagem()" id="profileDisplay">
+                <input type="file" onchange="displayImage(this)" id="profileImage" name="profileImage"
+                    style="display: none;">
+
+            </div>
+
+        </nav>
+
+
+
+    </header>
+
+    <section>
+        <iframe src="about:blank" frameborder="0" width="100%" height="100%" name="trocariframe"></iframe>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(".bk").click(function () {
+            $("#menu").show();
+            $(".bk").hide();
+        });
+        $(".btn-close").click(function () {
+            $("#menu").hide();
+            $(".bk").show();
+        });
+
+
+    </script>
+    <script language='JavaScript'>
+        function SomenteNumero(e) {
+            var tecla = (window.event) ? event.keyCode : e.which;
+            if ((tecla > 47 && tecla < 58)) return true;
+            else {
+                if (tecla == 9 || tecla == 0) return true;
+                else return false;
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="principal">
+
+        <div id="iphone1">
+            <img src="img/b.png" alt="">
+        </div>
+
+        <div id="iphone2">
+            <img src="img/a.png" alt="">
+        </div>
+
+        <div id="formulario">
+
+            <div id="form">
+
+                <div>
+                    <h2>Stay Clear</h2>
+                    <span>Cadastre-se para ter contato com os melhores profissionais de todas as áreas.</span>
+                </div>
+
+                <input type="text" name="" id="name" placeholder="Digite seu Nome" class="textbox">
+                <input type="email" name="" id="email" placeholder="Digite seu E-mail" class="textbox">
+                <input type="password" name="" id="password" placeholder="Digite sua Senha" class="textbox">
+                <select id="professions">
+                    <option value="web">Desenvolvedor Web</option>
+                    <option value="mobile">Desenvolvedor Mobile</option>
+                    <option value="arquiteto-software">Arquiteto de Software</option>
+                    <option value="fullstack">FullStack</option>
+                </select>
+                <input type="button" value="Cadastre-se" id="cadastrar" onclick="register()">
+
+                <div class="info">
+                    <p>
+                        Ao se cadastrar, você concorda com nossos <b>Termos, Política de Dados e Política de
+                            Cookies.</b>
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div id="login">
+                <p>Tem uma conta? <a href="../Login/index.html">Conecte-se</a></p>
+            </div>
+
+            <div id="obterAplicativo">
+
+                <p>Obter Aplicativo</p>
+
+                <div>
+                    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_portuguese-brazilian-pt_br.png/68006a2bb372.png"
+                        alt="" width="220">
+                    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_portuguese_brazilian-pt_BR.png/2f2a0c05b2f3.png "
+                        alt="" width="220">
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <script src="../Register/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   }
+   body{
+    background-color: #292d34;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+   .main{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+        align-items: center;
+
+
+   }
+
+   
+   
+   .card{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 10px 0 rgb(0, 0, 0);
+        border-radius: 5px; 
+        margin: 14px;
+        margin-bottom: 80px;
+       
+        
+       }
+   
+   .image img{
+     width: 100%;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+    }
+   
+   .title{
+    
+     text-align: center;
+     padding: 10px;
+     color: #c7d1d8;
+     
+     
+    }
+   
+   h1{
+     font-size: 23px;
+    
+    }
+   
+   .des{
+     padding: 20px;
+     text-align: center;
+     padding-top: 5px;
+     border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+     color: #8fa5b9;
+     display: flex;
+     flex-direction: column;
+   }
+
+   .botoes{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+   }
+
+   .botoes button{
+     margin-left: 5px;
+     width: 100%;
+     font-size: 1em;
+   }
+   button{
+     margin-top: 40px;
+     margin-bottom: 10px;
+     border: 2px solid #3171a7;
+     background-color: transparent;
+     color: #c7d1d8;
+     border-radius: 5px;
+     padding:10px;
+   }
+   button:hover{
+     background-color: black;
+     color: white;
+     transition: .5s;
+     cursor: pointer;
+   }
+
+
+@media (max-width: 480px) { 
+     
+
+  .card{
+    width: 100%;
+    margin-bottom: 80px;
+ 
+  }
+
+  .main{
+    justify-content: center;
+  }
+
+ 
+  .des p{
+
+    font-size: 1.3em;
+  }
+
+  .title h1{
+    font-size: 2em;
+  }
+
+  
+  .botoes{
+   width: 100%;
+  }
+
+  .botoes button{
+    width: 40%;
+   }
+}
+
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+     
+
+  .card{
+    width: 100%;
+    margin-bottom: 80px;
+ 
+  }
+
+  .main{
+    justify-content: center;
+  }
+
+  .des p{
+
+    font-size: 1.3em;
+  }
+
+  .title h1{
+    font-size: 2em;
+  }
+
+  .botoes{
+    width: 100%;
+   }
+ 
+   .botoes button{
+     width: 40%;
+    }
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+     
+
+  .card{
+    width: 40%;
+    margin-bottom: 80px;
+ 
+  }
+
+  .main{
+    justify-content: center;
+  }
+}
+
+/* Desktop grande */
+
+
